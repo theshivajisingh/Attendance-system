@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Attendance System</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🏫 School Attendance Management System</h1>
+    </header>
+
+    <div id="messageArea">
+      <div id="successMsg" class="success-msg"></div>
+      <div id="errorMsg" class="error-msg"></div>
+    </div>
+
+    <section class="section">
+      <h2>📚 Students</h2>
+      <button onclick="openAddStudentModal()">➕ Add New Student</button>
+      <div id="studentList"></div>
+    </section>
+
+    <section class="section">
+      <h2>📅 Mark Attendance</h2>
+      <div>
+        <label>Select Date: </label>
+        <input type="date" id="attendanceDate" onchange="loadAttendanceForDate()">
+      </div>
+      <div id="attendanceForm"></div>
+    </section>
+
+    <section class="section">
+      <h2>📊 Reports</h2>
+      <div>
+        <label>From: </label>
+        <input type="date" id="reportFrom">
+        <label>To: </label>
+        <input type="date" id="reportTo">
+        <button onclick="generateReport()">Generate Report</button>
+      </div>
+      <div id="reportSection">
+        <canvas id="attendanceChart"></canvas>
+      </div>
+    </section>
+  </div>
+
+  <div id="addStudentModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeAddStudentModal()">&times;</span>
+      <h2>Add New Student</h2>
+      <form id="studentForm">
+        <input type="text" id="studentId" placeholder="Student ID (e.g., S001)" required>
+        <input type="text" id="studentName" placeholder="Full Name" required>
+        <select id="studentClass" required>
+          <option value="">Select Class</option>
+          <option value="9A">9A</option>
+          <option value="9B">9B</option>
+          <option value="10A">10A</option>
+          <option value="10B">10B</option>
+          <option value="11A">11A</option>
+          <option value="11B">11B</option>
+          <option value="12A">12A</option>
+          <option value="12B">12B</option>
+        </select>
+        <button type="submit">Add Student</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

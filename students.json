@@ -1,0 +1,17 @@
+[
+  {"id": "S001", "name": "John Doe", "class": "10A"},
+  {"id": "S002", "name": "Jane Smith", "class": "10A"},
+  {"id": "S003", "name": "Alice Johnson", "class": "10B"},
+  {"id": "S004", "name": "Bob Brown", "class": "10B"},
+  {"id": "S005", "name": "Charlie Wilson", "class": "11A"},
+  {"id": "S006", "name": "Diana Davis", "class": "11A"},
+  {"id": "S007", "name": "Eve Miller", "class": "11B"},
+  {"id": "S008", "name": "Frank Garcia", "class": "11B"},
+  {"id": "S009", "name": "Grace Lee", "class": "12A"},
+  {"id": "S010", "name": "Henry Taylor", "class": "12A"},
+  {"id": "S011", "name": "Ivy Anderson", "class": "12B"},
+  {"id": "S012", "name": "Jack White", "class": "12B"},
+  {"id": "S013", "name": "Kara Moore", "class": "9A"},
+  {"id": "S014", "name": "Leo Martin", "class": "9A"},
+  {"id": "S015", "name": "Mia Thomas", "class": "9B"}
+]
